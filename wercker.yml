@@ -17,8 +17,6 @@ build:
         cwd: $WERCKER_SOURCE_DIR/keyboard/ergodox_ez
         code: |
           mv ergodox_ez.hex $WERCKER_OUTPUT_DIR
-deploy:
-  steps:
     - script:
         name: put built hex file to bintray.
         code: |
